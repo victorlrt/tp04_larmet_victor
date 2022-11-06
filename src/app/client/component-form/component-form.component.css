@@ -19,7 +19,7 @@
     padding: 1.2em;
     border-radius: 1em;
     text-align: left;
-    margin: 2em 15em;
+    margin: 2em 2em;
     display: flex;
     flex-direction: column;
 
@@ -52,14 +52,9 @@
     justify-content: space-evenly
 }
 
-#genderCtn * { 
-  margin: 0em; 
+#genderCtn * {
+  margin: 0em;
 }
-
-
-
-
-
 
 label {
   margin-top: 0.5em;

@@ -10,8 +10,8 @@
         </label> <br>
         <label>Telephone : <input type="tel" placeholder="Telephone" [(ngModel)]="ngTel" appCheckFormNumber /> </label>
         <br>
-        <label>Email : <input type="email" placeholder="Email" [(ngModel)]="ngEmail" appCheckFormEmail /> </label> 
-        <label>Gender : </label> 
+        <label>Email : <input type="email" placeholder="Email" [(ngModel)]="ngEmail" appCheckFormEmail /> </label>
+        <label>Gender : </label>
         <div id="genderCtn">
           <label> Male <input type="radio" name="gender" value="Male" [(ngModel)]="ngGender"></label>
           <label> Female <input type="radio" name="gender" value="Female" [(ngModel)]="ngGender"></label>
@@ -19,14 +19,14 @@
       </div>
 
       <div class="form-logs">
-          <label>Login : <input type="text" placeholder="Login" [(ngModel)]="ngLogin" /> </label> 
+          <label>Login : <input type="text" placeholder="Login" [(ngModel)]="ngLogin" /> </label>
           <label>Password : <input type="password" id="password" placeholder="Password"
-            [(ngModel)]="ngPassword" /> </label> 
+            [(ngModel)]="ngPassword" /> </label>
           <label>Verification Password : <input type="password" id="verifPassword"
             placeholder="Verification Password" [(ngModel)]="ngPasswordCheck" /> </label>
       </div>
       <!-- <p>Test synchro : {{ngLastname}}</p> -->
-      
+
       <div>
         <button (click)="showSummary=true">Send</button>
       </div>

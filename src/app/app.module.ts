@@ -8,11 +8,12 @@ import { ComponentFooterComponent } from './component-footer/component-footer.co
 import { HttpClientModule } from '@angular/common/http';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
+import { StoreComponent } from './store/store.component';
 
 const routes: Routes = [
-  { path: 'home', component: HomeComponent },
+  { path: '', component: HomeComponent },
   {
-    path: 'client', 
+    path: 'client',
     loadChildren: () =>
       import('./client/client.module').then((m) => m.ClientModule)
   },
@@ -28,7 +29,8 @@ const routes: Routes = [
     AppComponent,
     ComponentHeaderComponent,
     ComponentFooterComponent,
-    HomeComponent
+    HomeComponent,
+    StoreComponent
   ],
   imports: [
     BrowserModule,
