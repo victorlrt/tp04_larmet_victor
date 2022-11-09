@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "name": "Amanite tue-mouches",
     "edible": false,
     "poisonous": true,
@@ -8,6 +9,7 @@
     "toxicity": "Lethal"
   },
   {
+    "id": 2,
     "name": "Amanite phalloïde",
     "edible": false,
     "poisonous": true,
@@ -16,6 +18,7 @@
     "toxicity": "Lethal"
   },
   {
+    "id": 3,
     "name": "Amanite vireuse",
     "edible": false,
     "poisonous": true,
@@ -24,6 +27,7 @@
     "toxicity": "Lethal"
   },
   {
+    "id": 4,
     "name": "Cêpe de Bordeaux",
     "edible": true,
     "poisonous": false,
@@ -32,6 +36,7 @@
     "toxicity": "None"
   },
   {
+    "id": 5,
     "name": "Champignon de Paris",
     "edible": true,
     "poisonous": false,
@@ -40,6 +45,7 @@
     "toxicity": "None"
   },
   {
+    "id": 6,
     "name": "Champignon hallucinogène",
     "edible": false,
     "poisonous": true,
@@ -48,6 +54,7 @@
     "toxicity": "Hallucinogenic"
   },
   {
+    "id": 7,
     "name": "Truffe",
     "edible": true,
     "poisonous": false,
@@ -56,6 +63,7 @@
     "toxicity": "None"
   },
   {
+    "id": 8,
     "name": "Trompette de la mort",
     "edible": true,
     "poisonous": false,
@@ -64,6 +72,7 @@
     "toxicity": "None"
   },
   {
+    "id": 9,
     "name": "Girollle",
     "edible": true,
     "poisonous": false,
@@ -72,6 +81,7 @@
     "toxicity": "None"
   },
   {
+    "id": 10,
     "name": "Pleurote",
     "edible": true,
     "poisonous": false,
@@ -80,6 +90,7 @@
     "toxicity": "None"
   },
   {
+    "id": 11,
     "name": "Langue de boeuf",
     "edible": true,
     "poisonous": false,

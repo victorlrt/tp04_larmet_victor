@@ -1,0 +1,7 @@
+<div>
+    <h3> STORE </h3>
+    <div *ngFor="let m of mushrooms$ | async">
+        <p> {{ m.name }} <button (click)="delContact(m)">Sup</button> </p>
+    </div>
+</div>
+

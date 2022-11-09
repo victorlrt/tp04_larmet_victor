@@ -8,6 +8,10 @@ html, body {
 }
 
 
+h3 {
+  color: white;
+}
+
 
 nav {
   margin-bottom: 2em;
@@ -16,4 +20,13 @@ nav {
 label, p, a {
   color: #fff;
 
+}
+
+.detailsBtn {
+  background-color: #00d44059;
+}
+
+.detailsBtn:hover {
+
+  background-color: #ccc;
 }

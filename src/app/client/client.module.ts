@@ -11,7 +11,7 @@ import { CheckFormEMailDirective } from '../directive/directive-email/check-form
 import { RouterModule, Routes } from '@angular/router';
 
 const clientRoutes: Routes = [
-  {path: 'clientForm', component: ComponentFormComponent}
+  {path: '', component: ComponentFormComponent}
 
 ];
 

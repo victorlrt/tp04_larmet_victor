@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { NgxsModule } from '@ngxs/store';
 
 import { AppComponent } from './component-main/app.component';
 import { ComponentHeaderComponent } from './component-header/component-header.component';
@@ -8,12 +9,12 @@ import { ComponentFooterComponent } from './component-footer/component-footer.co
 import { HttpClientModule } from '@angular/common/http';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
-import { StoreComponent } from './store/store.component';
+import { StoreState } from './core/state/store-state';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   {
-    path: 'client',
+    path: 'formClient',
     loadChildren: () =>
       import('./client/client.module').then((m) => m.ClientModule)
   },
@@ -21,6 +22,11 @@ const routes: Routes = [
     path: 'catalogue',
     loadChildren: () =>
       import('./catalogue/catalogue.module').then((m) => m.CatalogueModule)
+  },
+  {
+    path: 'store',
+    loadChildren: () =>
+      import('./store/store.module').then((m) => m.StoreModule)
   }
 ];
 
@@ -29,13 +35,13 @@ const routes: Routes = [
     AppComponent,
     ComponentHeaderComponent,
     ComponentFooterComponent,
-    HomeComponent,
-    StoreComponent
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    NgxsModule.forRoot([StoreState])
 
   ],
   providers: [],

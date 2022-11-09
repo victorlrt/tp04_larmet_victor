@@ -36,10 +36,10 @@
         </div>
         <div class="infoCatalogue">
           <p> Name : {{p.name}}</p>
-          <p> Description : {{p.description}}</p>
           <p> Edible : {{p.edible }}</p>
           <p> Poisonous : {{p.poisonous }}</p>
           <p> Toxicity : {{p.toxicity }}</p>
+          <a class="detailsBtn" [routerLink]="['/catalogue', p.id]"> Voir détails (+) </a>
         </div>
       </div>
     </div>

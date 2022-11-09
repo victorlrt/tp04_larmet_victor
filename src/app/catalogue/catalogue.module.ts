@@ -3,19 +3,20 @@ import { CommonModule } from '@angular/common';
 import { ProductCatalogueComponent } from './component-catalogue/product-catalogue.component';
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from  '@angular/forms';
-import { NgxsModule } from '@ngxs/store';
-import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
+import { DetailsCatalogueComponent } from './details-catalogue/details-catalogue.component';
 
 const catalogueRoutes: Routes = [
-  { path: 'listMushrooms', component: ProductCatalogueComponent}
+  { path: '', component: ProductCatalogueComponent},
+  { path: ':id', component: DetailsCatalogueComponent}
 
 ]
 
 
 @NgModule({
   declarations: [
-    ProductCatalogueComponent
+    ProductCatalogueComponent,
+    DetailsCatalogueComponent
   ],
   imports: [
     CommonModule,
