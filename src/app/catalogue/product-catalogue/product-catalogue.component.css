@@ -1,18 +1,18 @@
 .itemCatalogue {
     orientation: center;
     border: 1px solid #ccc;
-    padding: 1em;
+    padding: 0.5em;
     display: flex;
     flex-direction: row;
 }
 
 .imgCatalogue img {
-  width: 25em;
-  height: 25em;
+  width: 20em;
+  height: 20em;
 }
 
 .infoCatalogue {
-  margin: 1em;
+  margin: 0em 2em;
 }
 
 .infoCatalogue p {
@@ -21,7 +21,7 @@
 
 
 .listCatalogue {
-  margin: 1em 5em;
+  margin: 1em 2em;
 }
 
 .groupFilter {

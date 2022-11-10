@@ -5,13 +5,12 @@ import { StoreState } from '../core/state/store-state';
 
 @Component({
   selector: 'app-component-header',
-  templateUrl: './component-header.component.html',
-  styleUrls: ['./component-header.component.css']
+  templateUrl: './header.component.html',
+  styleUrls: ['./header.component.css']
 })
-export class ComponentHeaderComponent {
+export class HeaderComponent {
 
   @Select(StoreState.getNbMushrooms) nb$: Observable<number>;
-  @Select(StoreState.getNbMushroomsFavorite(true)) nbFav$: Observable<number>;
   constructor() {}
 
 }

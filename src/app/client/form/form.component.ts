@@ -2,10 +2,10 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-component-form',
-  templateUrl: './component-form.component.html',
-  styleUrls: ['./component-form.component.css']
+  templateUrl: './form.component.html',
+  styleUrls: ['./form.component.css']
 })
-export class ComponentFormComponent {
+export class FormComponent {
 
   constructor() {
   }

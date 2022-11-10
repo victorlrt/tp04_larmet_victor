@@ -2,10 +2,9 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgxsModule } from '@ngxs/store';
 
-import { AppComponent } from './component-main/app.component';
-import { ComponentHeaderComponent } from './component-header/component-header.component';
-import { ComponentFooterComponent } from './component-footer/component-footer.component';
-
+import { AppComponent } from './main/app.component';
+import { HeaderComponent } from './header/header.component';
+import {FooterComponent } from  './footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
@@ -33,8 +32,8 @@ const routes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    ComponentHeaderComponent,
-    ComponentFooterComponent,
+    HeaderComponent,
+    FooterComponent,
     HomeComponent
   ],
   imports: [

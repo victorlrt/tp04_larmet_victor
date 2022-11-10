@@ -7,4 +7,11 @@ h1 {
 
 #nbStore {
   color: black;
+  background: red;
+  padding: 0.2em;
+}
+
+#imgIconStore {
+  width: 2em;
+  height: 2em;
 }

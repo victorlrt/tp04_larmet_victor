@@ -12,7 +12,7 @@
   </div>
 </nav> -->
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top ">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -29,7 +29,7 @@
       </li>
     </ul>
     <span class="navbar-text">
-      <a class="nav-item nav-link ml-auto"  [routerLink]="['/store']" routerLinkActive="active" ariaCurrentWhenActive="page">Store <label id="nbStore">{{ nbFav$ | async }}</label> </a>
+      <a class="nav-item nav-link ml-auto"  [routerLink]="['/store']" routerLinkActive="active" ariaCurrentWhenActive="page">Store <img src="../../assets/img/free-store-icon-2017-thumb.png" alt="N/A" id="imgIconStore"/>  <label id="nbStore">{{ nb$ | async }}</label> </a>
     </span>
   </div>
 </nav>

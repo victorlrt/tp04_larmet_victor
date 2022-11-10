@@ -32,13 +32,14 @@
     <div *ngFor="let p of catalogue$ | async">
       <div class="itemCatalogue">
         <div class="imgCatalogue">
-          <p><img src="{{p.img}}" alt="N/A" /> </p>
+          <img src="{{p.img}}" alt="N/A" />
         </div>
         <div class="infoCatalogue">
           <p> Name : {{p.name}}</p>
           <p> Edible : {{p.edible }}</p>
           <p> Poisonous : {{p.poisonous }}</p>
           <p> Toxicity : {{p.toxicity }}</p>
+          <button class="detailsBtnAdd" (click)="quickAddMushroomToStore(p)"> Quick add $ </button> <br>
           <a class="detailsBtn" [routerLink]="['/catalogue', p.id]"> Voir détails (+) </a>
         </div>
       </div>

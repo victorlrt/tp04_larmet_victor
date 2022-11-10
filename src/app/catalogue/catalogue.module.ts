@@ -1,6 +1,6 @@
-import { NgModule } from '@angular/core';
+import {  NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ProductCatalogueComponent } from './component-catalogue/product-catalogue.component';
+import { ProductCatalogueComponent } from './product-catalogue/product-catalogue.component';
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from  '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
@@ -24,9 +24,8 @@ const catalogueRoutes: Routes = [
     HttpClientModule,
     ReactiveFormsModule,
     FormsModule
-    //NgxsModule.forFeature([ContactState])
   ],
-  providers: []
+  providers: [DetailsCatalogueComponent]
 
 })
 export class CatalogueModule { }

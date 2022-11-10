@@ -1,15 +1,18 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Injectable, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Store } from '@ngxs/store';
 import { CatalogueService } from '../catalogue.service';
 import { Mushroom } from '../../core/model/mushroom';
-import { AddMushroom } from 'src/app/core/model/storeAction';
+import { AddMushroom } from 'src/app/core/model/store';
 
 @Component({
   selector: 'app-details-catalogue',
   templateUrl: './details-catalogue.component.html',
   styleUrls: ['./details-catalogue.component.css']
 })
+
+
+
 export class DetailsCatalogueComponent implements OnInit {
 
   mushroom: Mushroom | undefined;

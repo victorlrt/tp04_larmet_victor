@@ -30,3 +30,12 @@ label, p, a {
 
   background-color: #ccc;
 }
+
+.detailsBtnAdd {
+  background-color: #d4b40059;
+  margin: 1em 0em;
+}
+
+.detailsBtnView {
+  background-color: #000ed459;
+}

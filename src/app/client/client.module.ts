@@ -1,6 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { ComponentFormComponent } from './component-form/component-form.component';
-import { ComponentSummaryComponent } from './component-summary/component-summary.component';
+import { FormComponent } from './form/form.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
@@ -9,16 +8,17 @@ import { CheckFormNumberDirective } from '../directive/directive-number/check-fo
 import { PipeFormatTelPipe } from '../pipe/pipe-format-tel.pipe';
 import { CheckFormEMailDirective } from '../directive/directive-email/check-form-email.directive';
 import { RouterModule, Routes } from '@angular/router';
+import { SummaryComponent } from './summary/summary.component';
 
 const clientRoutes: Routes = [
-  {path: '', component: ComponentFormComponent}
+  {path: '', component: FormComponent}
 
 ];
 
 @NgModule({
   declarations: [
-    ComponentFormComponent,
-    ComponentSummaryComponent,
+    FormComponent,
+    SummaryComponent,
     CheckFormStringDirective,
     CheckFormNumberDirective,
     PipeFormatTelPipe,

@@ -4,7 +4,7 @@ import { Mushroom } from '../../core/model/mushroom';
 import { map } from 'rxjs/operators';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { CatalogueService } from '../catalogue.service';
-
+import { DetailsCatalogueComponent } from '../details-catalogue/details-catalogue.component';
 
 @Component({
   selector: 'app-product-catalogue',
@@ -13,7 +13,9 @@ import { CatalogueService } from '../catalogue.service';
 })
 export class ProductCatalogueComponent implements OnInit {
 
-  constructor(public tsCatalogue: CatalogueService) { }
+  constructor(public tsCatalogue: CatalogueService, private details: DetailsCatalogueComponent) { }
+
+
 
   catalogue$: Observable<Mushroom[]>;
   uniqueData$: Observable<String[]>;
@@ -35,9 +37,9 @@ export class ProductCatalogueComponent implements OnInit {
     toxicityFilter: new FormControl('')
   });
 
-
-
-
+  quickAddMushroomToStore(mushroom: Mushroom) : void {
+    this.details.addMushroomToStore(mushroom);
+  }
 
   ngOnInit(): void {
     this.catalogue$ = this.tsCatalogue.getCatalogue();

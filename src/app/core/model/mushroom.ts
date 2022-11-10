@@ -6,9 +6,9 @@ export class Mushroom {
   img = '';
   description = "";
   toxicity = "";
-  favorite = false;
+  quantity = 0;
 
-  constructor(id: number, name: string, edible: boolean, poisonous: boolean, img: string, description: string, toxicity: string, favorite: boolean) {
+  constructor(id: number, name: string, edible: boolean, poisonous: boolean, img: string, description: string, toxicity: string, quantity: number) {
     this.id = id;
     this.name = name;
     this.edible = edible;
@@ -16,6 +16,6 @@ export class Mushroom {
     this.img = img;
     this.description = description;
     this.toxicity = toxicity;
-    this.favorite = favorite;
+    this.quantity = quantity;
   }
 }

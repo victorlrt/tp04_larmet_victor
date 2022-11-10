@@ -2,10 +2,10 @@ import { Component, Output, Input, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-component-summary',
-  templateUrl: './component-summary.component.html',
-  styleUrls: ['./component-summary.component.css']
+  templateUrl: './summary.component.html',
+  styleUrls: ['./summary.component.css']
 })
-export class ComponentSummaryComponent {
+export class SummaryComponent {
 
 
   @Input() lastname : string = "";
